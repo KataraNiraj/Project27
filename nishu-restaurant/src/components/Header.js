@@ -12,7 +12,7 @@ const Header = () => {
   const closeMobileMenu = () => {
     setIsMobileNavOpen(false);
     setHamburgerMenuOpen(false);
-  }
+  };
 
   useEffect(() => {
     /**
@@ -206,53 +206,6 @@ const Header = () => {
       }
 
       /**
-       * Events slider
-       */
-      new Swiper(".events-slider", {
-        speed: 600,
-        loop: true,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
-        slidesPerView: "auto",
-        pagination: {
-          el: ".swiper-pagination",
-          type: "bullets",
-          clickable: true,
-        },
-      });
-
-      /**
-       * Testimonials slider
-       */
-      new Swiper(".testimonials-slider", {
-        speed: 600,
-        loop: true,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
-        slidesPerView: "auto",
-        pagination: {
-          el: ".swiper-pagination",
-          type: "bullets",
-          clickable: true,
-        },
-        breakpoints: {
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-
-          1200: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-        },
-      });
-
-      /**
        * Initiate gallery lightbox
        */
       const galleryLightbox = GLightbox({
@@ -286,7 +239,9 @@ const Header = () => {
           <a href="index.html">Nishu Restaurant</a>
         </h1>
         {/* <!-- Uncomment below if you prefer to use an image logo --> */}
-        <a href="index.html" className="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" className="img-fluid" /></a>
+        <a href="index.html" className="logo me-auto me-lg-0">
+          <img src="assets/img/logo.png" alt="" className="img-fluid" />
+        </a>
 
         <nav
           id="navbar"
@@ -295,37 +250,79 @@ const Header = () => {
           {/* <nav id="navbar" className="navbar order-last order-lg-0"> */}
           <ul>
             <li>
-              <a className="nav-link scrollto active" href="#hero" onClick={()=>{closeMobileMenu()}}>
+              <a
+                className="nav-link scrollto active"
+                href="#hero"
+                onClick={() => {
+                  closeMobileMenu();
+                }}
+              >
                 Home
               </a>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#about" onClick={()=>{closeMobileMenu()}}>
+              <a
+                className="nav-link scrollto"
+                href="#about"
+                onClick={() => {
+                  closeMobileMenu();
+                }}
+              >
                 About
               </a>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#menu" onClick={()=>{closeMobileMenu()}}>
+              <a
+                className="nav-link scrollto"
+                href="#menu"
+                onClick={() => {
+                  closeMobileMenu();
+                }}
+              >
                 Menu
               </a>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#specials" onClick={()=>{closeMobileMenu()}}>
+              <a
+                className="nav-link scrollto"
+                href="#specials"
+                onClick={() => {
+                  closeMobileMenu();
+                }}
+              >
                 Specials
               </a>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#events" onClick={()=>{closeMobileMenu()}}>
+              <a
+                className="nav-link scrollto"
+                href="#events"
+                onClick={() => {
+                  closeMobileMenu();
+                }}
+              >
                 Events
               </a>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#chefs" onClick={()=>{closeMobileMenu()}}>
+              <a
+                className="nav-link scrollto"
+                href="#chefs"
+                onClick={() => {
+                  closeMobileMenu();
+                }}
+              >
                 Chefs
               </a>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#gallery" onClick={()=>{closeMobileMenu()}}>
+              <a
+                className="nav-link scrollto"
+                href="#gallery"
+                onClick={() => {
+                  closeMobileMenu();
+                }}
+              >
                 Gallery
               </a>
             </li>
@@ -372,7 +369,13 @@ const Header = () => {
               </ul>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#contact" onClick={()=>{closeMobileMenu()}}>
+              <a
+                className="nav-link scrollto"
+                href="#contact"
+                onClick={() => {
+                  closeMobileMenu();
+                }}
+              >
                 Contact
               </a>
             </li>
@@ -384,7 +387,7 @@ const Header = () => {
                 : "bi bi-list mobile-nav-toggle"
             }
             onClick={() => {
-              setHamburgerMenuOpen(isHamburgerMenuOpen ? false : true );
+              setHamburgerMenuOpen(isHamburgerMenuOpen ? false : true);
             }}
           ></i>
         </nav>
