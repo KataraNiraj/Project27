@@ -13,10 +13,11 @@ const AboutSection = () => {
                 </div>
             </div>
             <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-                <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                <h3> "The Tasteful Odyssey"</h3>
                 <p className="fst-itali c">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+                Once upon a time, in the heart of a bustling city, there stood a quaint and unassuming restaurant named "The Tasteful Odyssey." Tucked away on a quiet cobblestone street, it exuded an aura of mystery that intrigued passersby. With its charming facade adorned with hanging flower baskets and a rustic wooden sign, it seemed to whisper promises of gastronomic delights within.
+
+The restaurant's tale began with Chef Anthony, a culinary maestro with an insatiable passion for flavors. As a child, he would watch his grandmother create magic in the kitchen, and those cherished memories fueled his culinary journey. After years of honing his craft in prestigious kitchens around the world, Chef Anthony returned to his hometown with a dream: to create a place where food became art, and dining turned into an unforgettable experience.
                 </p>
                 <ul>
                 <li><i className="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
